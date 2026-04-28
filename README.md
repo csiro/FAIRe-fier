@@ -22,6 +22,7 @@ FAIRe-fier is a Shiny for Python application for validating environmental DNA (e
 
 ## Installation
 ```bash
+# TODO update link
 git clone https://github.com/csiro-internal/FAIRe-fier.git
 cd FAIRe-fier
 pip install -r requirements.txt
@@ -56,6 +57,14 @@ Example input templates are available at: [FAIRe example datasets page](https://
 ### Outputs
 - `fairefier_metadata.xlsx`: clean validated metadata when validation passes
 - `fairefier_warn_error.xlsx`: revision sheets with warnings/errors
+
+
+## Citation
+If you use the software, please cite:
+> Yong, SukYee (2026): FAIRe-fier. CSIRO. v1. Software. http://hdl.handle.net/102.100.100/734538
+
+If you use the hosted web application, cite:
+> Yong, SukYee; & Takahashi, Miwa (2025): FAIRe-fier: FAIR eDNA metadata verifier. v2. CSIRO. Service Collection. http://hdl.handle.net/102.100.100/706519
 
 
 ## Acknowledgements

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+title: "FAIRe-fier"
+
+type: software
+
+authors:
+  - family-names: Yong
+    given-names: Suk Yee
+    orcid: "https://orcid.org/0000-0002-5204-2902"
+
+abstract: >
+  FAIRe-fier is a Shiny for Python tool for validating FAIR eDNA
+  metadata. It supports checking metadata structure, completeness, and
+  controlled vocabulary usage to promote Findable, Accessible,
+  Interoperable, and Reusable data practices.
+
+version: "v1.0.0"
+date-released: 2026-03-17
+
+repository-code: "https://github.com/csiro/FAIRe-fier"
+url: "https://github.com/csiro/FAIRe-fier"
+
+identifiers:
+  - type: handle
+    value: "102.100.100/734538"
+
+license: "BSD-3-Clause"
