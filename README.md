@@ -22,8 +22,7 @@ FAIRe-fier is a Shiny for Python application for validating environmental DNA (e
 
 ## Installation
 ```bash
-# TODO update link
-git clone https://github.com/csiro-internal/FAIRe-fier.git
+git clone https://github.com/csiro/FAIRe-fier.git
 cd FAIRe-fier
 pip install -r requirements.txt
 ```
