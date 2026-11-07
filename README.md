@@ -58,6 +58,14 @@ Example input templates are available at: [FAIRe example datasets page](https://
 - `fairefier_warn_error.xlsx`: revision sheets with warnings/errors
 
 
+### Command line
+`fairefier_cli.py` runs the same validation without the app, for scripts and pipelines:
+```bash
+python fairefier_cli.py metadata.xlsx -o results
+```
+It writes `fairefier_metadata.xlsx` and `fairefier_warn_error.xlsx`, as the app's download buttons do, plus `fairefier_issues.tsv` (every warning and error, one per row) and `fairefier_summary.json` (pass or fail for each worksheet). By default it uses the checklist version given in `checkls_ver` in projectMetadata, or the latest `FAIRe_checklist*.xlsx` in the script's folder; `--checklist_version` and `--checklist_dir` change this. With `--strict`, it exits with status 1 when a worksheet fails, for use in automated checks.
+
+
 ## Citation
 If you use the software, please cite:
 > Yong, SukYee (2026): FAIRe-fier. CSIRO. v1. Software. http://hdl.handle.net/102.100.100/734538
