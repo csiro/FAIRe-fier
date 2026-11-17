@@ -65,6 +65,8 @@ python fairefier_cli.py metadata.xlsx -o results
 ```
 It writes `fairefier_metadata.xlsx` and `fairefier_warn_error.xlsx`, as the app's download buttons do, plus `fairefier_issues.tsv` (every warning and error, one per row) and `fairefier_summary.json` (pass or fail for each worksheet). By default it uses the checklist version given in `checkls_ver` in projectMetadata, or the latest `FAIRe_checklist*.xlsx` in the script's folder; `--checklist_version` and `--checklist_dir` change this. With `--strict`, it exits with status 1 when a worksheet fails, for use in automated checks.
 
+The app and the command line share their reading, validation and writing code, in `lib/validate_core.py`. `validate_module.py` holds only the Shiny parts of the app, and `fairefier_cli.py` only its arguments, the choice of checklist and the two plain-text outputs, so the two cannot drift apart.
+
 
 ## Citation
 If you use the software, please cite:
